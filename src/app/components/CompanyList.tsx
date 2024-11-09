@@ -114,16 +114,16 @@ const CompanyList = () => {
               </li>
             ))}
           </ul>
-          <div className="mt-6 flex justify-between">
+          <div className="mt-6 md:flex justify-between">
             <button
-              className="bg-gray-800 py-2 px-4 rounded disabled:opacity-50"
+              className="w-full md:w-auto mb-2 bg-gray-800 py-2 px-4 rounded disabled:opacity-50"
               onClick={handlePreviousPage}
               disabled={page === 1}
             >
               Previous
             </button>
             <button
-              className="bg-gray-800 py-2 px-4 rounded disabled:opacity-50"
+              className="w-full md:w-auto bg-gray-800 py-2 px-4 rounded disabled:opacity-50"
               onClick={handleNextPage}
               disabled={page >= Math.ceil(total / limit)}
             >
@@ -132,7 +132,7 @@ const CompanyList = () => {
           </div>
           <div className="mt-6">
             <button
-              className="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700"
+              className="w-full md:w-auto bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700"
               onClick={handleDeleteRequest}
             >
               Delete data
